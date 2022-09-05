@@ -6,7 +6,7 @@ const BASE_URL = 'https://api.apilayer.com/exchangerates_data/latest';
 
 // API_KEY должен быть в process.env, но немного не вышло(
 const myHeaders: HeadersInit = new Headers();
-myHeaders.append('apikey', `hUZaFGYcM1qCJSfUqfE8GFansgDkGfBu`);
+myHeaders.append('apikey', "hUZaFGYcM1qCJSfUqfE8GFansgDkGfBu");
 
 type requestOptionsType = {
   method: string;
@@ -19,9 +19,6 @@ const requestOptions: requestOptionsType = {
   redirect: 'follow',
   headers: myHeaders,
 };
-
-
-
 
 const App: React.FC = () => {
   const [currencyOptions, setCurrencyOptions] = useState<string[]>([]);
